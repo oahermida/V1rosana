@@ -1,0 +1,234 @@
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header styles */
+header {
+    background: #7a60a1;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: #ffc107;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #fff;
+}
+
+/* Hero section styles */
+#home {
+    background: url('https://source.unsplash.com/random/1600x900?salon') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+#home .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(122, 96, 161, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    z-index: 1;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text .btn {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background: #ffc107;
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.hero-text .btn:hover {
+    background: #e0a106;
+}
+
+/* Services section styles */
+#services {
+    padding: 6rem 0 4rem;
+}
+
+#services h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #7a60a1;
+    font-weight: 600;
+}
+
+.service-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.service-item {
+    flex: 1 1 calc(25% - 2rem);
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.service-item-info {
+    background: rgba(122, 96, 161, 0.9);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: background 0.3s ease;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item:hover .service-item-info {
+    background: rgba(105, 72, 154, 0.9);
+}
+
+.service-item h3 {
+    margin: 0;
+    font-weight: 400;
+}
+
+/* About section styles */
+#about {
+    padding: 6rem 0 4rem;
+    background: #fff;
+}
+
+#about .about-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact section styles */
+#contact {
+    padding: 6rem 0 4rem;
+    text-align: center;
+}
+
+#contact h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #7a60a1;
+    font-weight: 600;
+}
+
+.contact-info a {
+    color: #7a60a1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #69489a;
+}
+
+/* Footer styles */
+footer {
+    background: #7a60a1;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
